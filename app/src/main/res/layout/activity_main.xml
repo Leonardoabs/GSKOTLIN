@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="#d3d3d3"
+    android:padding="40dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ocean Saviors"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textColor="@color/purple_200"
+        android:textStyle="italic|bold"
+        android:layout_gravity="center"
+        android:paddingBottom="30dp" />
+
+    <EditText
+        android:id="@+id/textPraia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Digite a Praia:"
+        android:textStyle="italic|bold"
+        android:layout_marginBottom="30dp"
+        android:background="@android:drawable/edit_text" />
+
+    <EditText
+        android:id="@+id/textCidade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Digite a Cidade:"
+        android:textStyle="italic|bold"
+        android:layout_marginBottom="30dp"
+        android:background="@android:drawable/edit_text"/>
+
+    <EditText
+        android:id="@+id/textEstado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Digite o Estado:"
+        android:textStyle="italic|bold"
+        android:layout_marginBottom="30dp"
+        android:background="@android:drawable/edit_text"/>
+
+    <Button
+        android:id="@+id/btnAdicionar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Incluir"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/purple_200"
+        android:layout_marginBottom="15dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+</LinearLayout>
